@@ -12,23 +12,25 @@
             <button onclick="window.location.href='/tutrastero/tutrastero/app/vista/trasteros/trasterosLista.php#situacionTrasteros' ">Explorar Trasteros</button>
         </div>
 </section>
-<section class="grid-contenedor1">
-        <h1>Catálogo de Trasteros</h1>
-        <div class="tarjeta">
-            <h2>Tamaños Disponibles</h2>
-            <p>Desde pequeños hasta extra grandes, tenemos una variedad de trasteros para cubrir todas tus necesidades de almacenamiento.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Ubicaciones Estratégicas</h2>
-            <p>Nuestros trasteros están ubicados en lugares convenientes y de fácil acceso en toda la ciudad.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Seguridad Garantizada</h2>
-            <p>Tus pertenencias estarán protegidas con nuestros sistemas de vigilancia y acceso controlado.</p>
+<section class="catalogo">
+        <h1>Trasteros para Alquiler</h1>
+        <div class="contenedorTarjetas">
+            <div class="tarjeta">
+                <h3>Tamaños Disponibles</h3>
+                <p>Desde pequeños hasta extra grandes, tenemos una variedad de trasteros para cubrir todas tus necesidades de almacenamiento.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Ubicaciones Estratégicas</h3>
+                <p>Nuestros trasteros están ubicados en lugares convenientes y de fácil acceso en toda la ciudad.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Seguridad Garantizada</h3>
+                <p>Tus pertenencias estarán protegidas con nuestros sistemas de vigilancia y acceso controlado.</p>
+            </div>
         </div>
 </section>
 
-<section class="grid-contenedor2">        
+<section class="contenedor2">        
         <h1>Proceso de Alquiler</h1> 
 
         <div class="tarjeta" id="tarj-1">
@@ -67,7 +69,7 @@
             <p>Recibe tu llave y comienza a utilizar tu trastero de manera segura.</p>
         </div>
 </section>
-<section class="grid-contenedor3">
+<section class="contenedor3">
         <h1>Cobro de Recibos y Facturación</h1>
         <div class="tarjeta">
             <h2>Pagos Automáticos</h2>
@@ -87,7 +89,7 @@
         </div>
 </section>
 
-<section class="grid-contenedor4">
+<section class="contenedor4">
 
         <h1>Contacto y Soporte</h1>
         <div class="tarjeta">

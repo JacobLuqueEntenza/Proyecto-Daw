@@ -1,5 +1,5 @@
 :root {
-    --altura_header: 80px;
+    --altura_header: 60px;
     --color_blanco:rgb(255, 255, 255);
     --color_gris:rgb(169, 177, 195);
     --color_dark:rgb(40, 49, 70);
@@ -65,6 +65,32 @@ ol, ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
+}/*-------------Sesión trasteros en alquiler-----------*/
+.catalogo{
+    margin-top: 3rem;
+    text-align: center;
+}
+.contenedorTarjetas{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta{
+    margin: 2rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--color_gris);
+    box-shadow:10px 10px 50px 5px var(--color_gris);
+    border-radius: 10px;
+}
+.tarjeta>h3,.tarjeta>p{
+    margin: 1rem;
 }
 
 /* -------para telefonos moviles y tablet de pie---------*/
@@ -175,6 +201,9 @@ ol, ul {
         position: fixed;
         height: var(--altura_header);
         background-color: var(--color_blanco);
+        border-bottom: 2px solid var(--color_gris);
+        box-shadow:10px 10px 50px 20px var(--color_gris);
+
     }
     .lblHamburguesa,.nombre{
         display: none;
@@ -182,7 +211,7 @@ ol, ul {
     .ulMenu{
         position:relative;
         padding: 0; 
-        margin: 0;       
+        margin-top: 0;       
         width: 100%;
         height: var(--altura_header);
         display: flex;
@@ -191,6 +220,8 @@ ol, ul {
         align-items: center;
     }
     .aMenu{
+        margin: 0;
+        padding: 0;
         font-size: 1.5rem;
         color: black;
         font-weight: 500;
@@ -198,10 +229,10 @@ ol, ul {
     .aMenu:hover{
         color: var(--color_gris);
         text-decoration: none;
-        transition: all .3s ;        
+        transition: all .3s ;  
     }
     .principal{
-        padding: 8rem 3rem;
+        padding: 8rem 7rem;
         justify-content: left;
         align-items: flex-start;
     }
@@ -214,7 +245,7 @@ ol, ul {
         width:20%;
     }
     #titulo{
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-bottom: 2rem;
     }
     #parrafo{
@@ -224,7 +255,13 @@ ol, ul {
     .botones>button:hover{        
         translate: 5rem 0;
     }
-    
+
+    /*-----------trasteros en alquiler------------*/
+    .contenedorTarjetas{  
+        flex-direction: row;
+    }
+    .tarjeta{
+        height: 20rem;
     
 
 
