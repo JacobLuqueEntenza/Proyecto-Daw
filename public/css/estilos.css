@@ -1,0 +1,234 @@
+:root {
+    --altura_header: 80px;
+    --color_blanco:rgb(255, 255, 255);
+    --color_gris:rgb(169, 177, 195);
+    --color_dark:rgb(40, 49, 70);
+    --color_rosa:rgb(230, 99, 136);
+
+}
+
+/* Reseteamos los estilos de cualquier navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+.menu{
+    display: none;
+}
+.nombre{
+    font-weight: bold;
+}
+/*texto encima de foto en index*/
+.principal{
+    width: 100%;
+    height: 90vh;
+    background-image: url("../../public/img/fondoMio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.botones>button{   
+    height: 5rem;
+    margin:3rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--color_rosa);
+}
+.botones>button:hover{
+    color: var(--color_rosa);
+    background-color: var(--color_dark);
+    border:1px solid var(--color_rosa) ;
+    transform: scale(1.2);
+    transition: .6s;
+}
+#parrafo{
+    color: var(--color_rosa);
+}
+#titulo{
+    color: var(--color_blanco);
+}
+.botones{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------para telefonos moviles y tablet de pie---------*/
+@media (min-width: 300px) and (max-width: 550px) {
+    .nombre{
+        font-size: 1.8rem;
+    }
+    .principal{
+        width: 100%;
+        height: 80vh;
+         
+    }
+    .botones>button{
+        width: 50%;
+    }
+    
+}
+/*--------------------------------------------------------*/
+
+
+/*para tablet de pie y acostada*/
+@media  (min-width: 550px) and (max-width: 840px) {
+    .nombre{
+        font-size: 2.5rem;
+
+    }
+    .botones>button{
+        width: 33%;        
+    }
+    
+}
+/*------------------------------------------------------------*/   
+
+
+/*--------------maximo una tableta acostada----------------*/
+@media  (max-width: 840px) {
+        .header {
+            width: 100%;
+            height: var(--altura_header);
+        }
+        .navbar {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .menu:checked ~ .ulMenu {
+            height: calc(100vh - var(--altura_header));
+        }
+        
+        .hamburguesa {
+            cursor: pointer;
+        }
+        .ulMenu {
+            width: 100%;
+            left: 0;       
+            background-color:var(--color_gris);
+            position: absolute;
+            top: var(--altura_header);
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+        }
+        .liMenu{
+            width: 80%;
+            left: 0;
+            border-bottom: 2px solid;
+        }
+        .liMenu:hover {
+            width: 80%;
+            left: 0;
+            background-color: var(--color_dark); 
+        }
+        .aMenu {
+            font-size: 2em;
+            font-weight: bold;
+            color: black;
+        }
+        .aMenu:hover {
+            text-decoration: none;
+            color: var(--color_blanco);
+        }
+        .principal{
+            padding:3rem 2rem;
+            align-items: left;
+        }
+        #titulo{
+            display: none;
+        }
+        #parrafo{
+            font-size: 2.5rem;
+        }
+        
+}
+
+
+/*------a partir de portatiles pequeños-------------------*/
+@media  (min-width: 841px){
+    .header{
+        width: 100%;
+        position: fixed;
+        height: var(--altura_header);
+        background-color: var(--color_blanco);
+    }
+    .lblHamburguesa,.nombre{
+        display: none;
+    }
+    .ulMenu{
+        position:relative;
+        padding: 0; 
+        margin: 0;       
+        width: 100%;
+        height: var(--altura_header);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aMenu{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 500;
+    }
+    .aMenu:hover{
+        color: var(--color_gris);
+        text-decoration: none;
+        transition: all .3s ;        
+    }
+    .principal{
+        padding: 8rem 3rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .botones{
+        margin:2rem 0;
+        align-items: flex-start;
+    }
+    .botones>button{
+        margin: 0;
+        width:20%;
+    }
+    #titulo{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    #parrafo{
+        width: 65%;
+        font-size: 3rem;
+    }
+    .botones>button:hover{        
+        translate: 5rem 0;
+    }
+    
+    
+
+
+    
+    
+
+}
