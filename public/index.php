@@ -1,8 +1,6 @@
 <?php 
     // Incluir el header 
-    include '../app/vista/layouts/header.php'; 
-
-   
+    include '../app/vista/layouts/header.php';    
 ?>
 
 <section class="principal">        
@@ -54,51 +52,58 @@
 </section>
 <section class="cobros">
         <h2>Cobro de Recibos y Facturación</h2>
-        
-        <div class="tarjeta">
-            <h2>Pagos Automáticos</h2>
-            <p>Configura el pago automático de tus recibos para evitar retrasos.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Recordatorios de Vencimiento</h2>
-            <p>Recibe notificaciones oportunas sobre tus próximos pagos.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Historial de Pagos</h2>
-            <p>Accede fácilmente a tus registros de pagos en línea.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Opciones de Pago</h2>
-            <p>Paga en efectivo, tarjeta de crédito, bizum o transferencia bancaria.</p>
+        <div class="divCobros">
+            <div class="tarjeta">
+                <h2>Pagos Automáticos</h2>
+                <p>Configura el pago automático de tus recibos para evitar retrasos.</p>
+            </div>
+            <div class="tarjeta">
+                <h2>Recordatorios de Vencimiento</h2>
+                <p>Recibe notificaciones oportunas sobre tus próximos pagos.</p>
+            </div>
+            <div class="tarjeta">
+                <h2>Historial de Pagos</h2>
+                <p>Accede fácilmente a tus registros de pagos en línea.</p>
+            </div>
+            <div class="tarjeta">
+                <h2>Opciones de Pago</h2>
+                <p>Paga en efectivo, tarjeta de crédito, bizum o transferencia bancaria.</p>
+            </div>
         </div>
 </section>
 
-<section class="contenedor4">
-
+<section class="contactos">
         <h1>Contacto y Soporte</h1>
-        <div class="tarjeta">
-            <img src="/tutrastero/tutrastero/public/img/gmail.png" alt="gmail">
-            <img src="/tutrastero/tutrastero/public/img/outlook.png" alt="outlook">
-            <h2>Correo Electrónico</h2>
-            <p>Envíanos tus consultas y solicitudes a tutrasteroenhuelva@gmail.com</p>
+        <div class="divContacto">
+            <div class="tarjeta">
+                <div class="divImg">
+                    <img src="img/gmail.png" alt="gmail">
+                    <img src="img/outlook.png" alt="outlook">
+                </div>    
+                <h2>Correo Electrónico</h2>
+                <p>Envíanos tus consultas y solicitudes a tutrasteroenhuelva@gmail.com</p>
+            </div>
+            <div class="tarjeta">
+                <div class="divImg">
+                    <img src="img/telefono.png" alt="telefono">
+                    <img src="img/whatapp.png" alt="whatapp">
+                </div>
+                <h2>Línea de Atención</h2>
+                <p>Llámanos al 555-1234 para obtener asistencia personalizada.</p>
+            </div>
         </div>
-        <div class="tarjeta">
-            <img src="/tutrastero/tutrastero/public/img/telefono.png" alt="telefono">
-            <img src="/tutrastero/tutrastero/public/img/whatapp.png" alt="whatapp">
-            <h2>Línea de Atención</h2>
-            <p>Llámanos al 555-1234 para obtener asistencia personalizada.</p>
-        </div>
-        
 </section>
 
 <section class="mapa">
-
         <h1>Donde Estamos:</h1>
         <div class="tarjeta">
             <p>Nuestras instalaciones se encuantra ubicada en local comercial con salida a dos calles, de fácil acceso.</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.5861172929244!2d-6.943239264047862!3d37.281381421458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd11cfc22776e743%3A0x827feb3310ef61c!2sC.%20Legi%C3%B3n%20Espa%C3%B1ola%2C%206%2C%2021005%20Huelva!5e0!3m2!1ses!2ses!4v1714458476831!5m2!1ses!2ses"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        
+        </div> 
 </section>
+
+<?php 
+    // Incluir el header 
+    include '../app/vista/layouts/footer.php';    
+?>
 

@@ -133,6 +133,47 @@ ol, ul {
     margin-top: 3rem;
     font-size: var(--size_h2);   
 }
+.divCobros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-------------------contactos y soporte-------------------*/
+.contactos { 
+    margin-top: 3rem;
+    text-align: center;
+}
+.divContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divImg { 
+    padding: 1rem;  
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.divImg>img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*---------------donde estamos-------------------------------*/
+.mapa{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* -------para telefonos moviles y tablet de pie---------*/
@@ -317,7 +358,16 @@ ol, ul {
     .tarjeta{
         max-width: 35%;
     }
-    
+
+    /*------------Cobros----------------------*/
+    .divCobros{
+        flex-direction: row;
+    }
+
+    /*------donde eestamos--------------------*/
+    .divContacto{
+        flex-direction: row;
+    }
     
 
 }
