@@ -1,5 +1,6 @@
 :root {
     --altura_header: 60px;
+    --size_h2:2.5rem;
     --color_blanco:rgb(255, 255, 255);
     --color_gris:rgb(169, 177, 195);
     --color_dark:rgb(40, 49, 70);
@@ -26,7 +27,7 @@ ol, ul {
 .nombre{
     font-weight: bold;
 }
-/*texto encima de foto en index*/
+/*---------------texto encima de foto en index------------*/
 .principal{
     width: 100%;
     height: 90vh;
@@ -67,7 +68,9 @@ ol, ul {
     justify-content: center;
 
 
-}/*-------------Sesión trasteros en alquiler-----------*/
+}
+
+/*-------------Sección trasteros en alquiler-----------*/
 .catalogo{
     margin-top: 3rem;
     text-align: center;
@@ -92,6 +95,45 @@ ol, ul {
 .tarjeta>h3,.tarjeta>p{
     margin: 1rem;
 }
+
+/*-------------Sección proceso alquiler-----------*/
+.alquiler{
+    text-align: center;
+    margin-top: 3rem; 
+}
+.alquiler>h2{
+    font-size: var(--size_h2);   
+}
+.divAlquiler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tarj-1,#tarj-2,#tarj-3 {
+    width: 100px;           
+    height: 100px;          
+    border-bottom: 2px solid var(--color_gris);
+    box-shadow:10px 10px 50px 5px var(--color_gris);
+    border-radius: 50%; 
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.divAlquiler>img{
+    width: 5rem;
+    height: 5rem;
+}
+
+/*---------cobros recibos-------------------------*/
+.cobros{
+    text-align: center;
+}
+.cobros>h2{
+    margin-top: 3rem;
+    font-size: var(--size_h2);   
+}
+
 
 /* -------para telefonos moviles y tablet de pie---------*/
 @media (min-width: 300px) and (max-width: 550px) {
@@ -119,6 +161,10 @@ ol, ul {
     }
     .botones>button{
         width: 33%;        
+    }
+
+    .tarjeta{
+        max-width: 50%;
     }
     
 }
@@ -160,6 +206,7 @@ ol, ul {
             justify-content: center;
             align-items: center;
             transition: all .3s;
+            opacity: .9;
         }
         .liMenu{
             width: 80%;
@@ -259,12 +306,17 @@ ol, ul {
     /*-----------trasteros en alquiler------------*/
     .contenedorTarjetas{  
         flex-direction: row;
+        margin: 0 5rem;
     }
     .tarjeta{
         height: 20rem;
     
+    }
 
-
+    /*----proceso de alquiler---------------------*/
+    .tarjeta{
+        max-width: 35%;
+    }
     
     
 

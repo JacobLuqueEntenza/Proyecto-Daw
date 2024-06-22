@@ -13,7 +13,7 @@
         </div>
 </section>
 <section class="catalogo">
-        <h1>Trasteros para Alquiler</h1>
+        <h1>Alquiler de Trasteros</h1>
         <div class="contenedorTarjetas">
             <div class="tarjeta">
                 <h3>Tamaños Disponibles</h3>
@@ -30,47 +30,31 @@
         </div>
 </section>
 
-<section class="contenedor2">        
-        <h1>Proceso de Alquiler</h1> 
-
-        <div class="tarjeta" id="tarj-1">
-            <h1>1</h1>
-        </div>
-        <div class="tarjeta" id="tarj-2">
-            <img src="img/flechaDcha.png" alt="flechaDerecha">
-        </div> 
-        <div class="tarjeta" id="tarj-3">            
-            <h2>Selección</h2>            
-            <p>Elige el trastero que mejor se ajuste a tus necesidades y presupuesto.</p>
-        </div>
-        <div class="tarjeta" id="tarj-4">
-                
-        </div>
-        <div class="tarjeta" id="tarj-5">            
-            <h2>Registro</h2>            
-            <p>Completa el formulario de registro y firma el contrato de alquiler.</p>
-        </div>
-        <div class="tarjeta" id="tarj-6">
-            <img src="img/flechaIzq.png" alt="flechaIzquierda">
-        </div>
-        <div class="tarjeta" id="tarj-7">
-            <h1>2</h1>
-        </div>  
-        <div class="tarjeta" id="tarj-8">            
-        </div>      
-        <div class="tarjeta" id="tarj-9">
-            <h1>3</h1>
-        </div>
-        <div class="tarjeta" id="tarj-10">
-            <img src="img/flechaDcha.png" alt="flechaDerecha">
-        </div>
-        <div class="tarjeta" id="tarj-11">            
-            <h2>Seguridad Garantizada</h2>            
-            <p>Recibe tu llave y comienza a utilizar tu trastero de manera segura.</p>
-        </div>
+<section class="alquiler">        
+        <h2>Proceso de Alquiler</h2> 
+        <div class="divAlquiler">
+            <div class="tarjeta" id="tarj-1">1</div>            
+            <div class="tarjeta">            
+                <h2>Selección</h2>            
+                <p>Elige el trastero que mejor se ajuste a tus necesidades y presupuesto.</p>
+            </div>
+            <img src="img/flechaAbj.png" alt="flechaDerecha">
+            <div class="tarjeta" id="tarj-2">2</div>            
+            <div class="tarjeta" >            
+                <h2>Registro</h2>            
+                <p>Completa el formulario de registro y firma el contrato de alquiler.</p>
+            </div>
+            <img src="img/flechaAbj.png" alt="flechaDerecha">
+            <div class="tarjeta" id="tarj-3">3</div>            
+            <div class="tarjeta" >            
+                <h2>Seguridad Garantizada</h2>            
+                <p>Recibe tu llave y comienza a utilizar tu trastero de manera segura.</p>
+            </div>
+        </div>    
 </section>
-<section class="contenedor3">
-        <h1>Cobro de Recibos y Facturación</h1>
+<section class="cobros">
+        <h2>Cobro de Recibos y Facturación</h2>
+        
         <div class="tarjeta">
             <h2>Pagos Automáticos</h2>
             <p>Configura el pago automático de tus recibos para evitar retrasos.</p>
