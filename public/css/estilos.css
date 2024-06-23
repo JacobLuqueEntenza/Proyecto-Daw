@@ -1,10 +1,13 @@
 :root {
     --altura_header: 60px;
+    --size_h3:1.75rem;
     --size_h2:2.5rem;
+    --size_h1:3.5rem;
     --color_blanco:rgb(255, 255, 255);
-    --color_gris:rgb(169, 177, 195);
-    --color_dark:rgb(40, 49, 70);
-    --color_rosa:rgb(230, 99, 136);
+    --color_brand:rgb(169, 177, 195);
+    --color_mid:rgb(129, 148, 168);
+    --color_dark:rgb(29, 44, 59);
+    --color_ligth:rgb(227, 227, 241);
 
 }
 
@@ -27,6 +30,18 @@ ol, ul {
 .nombre{
     font-weight: bold;
 }
+h1{
+    font-size: var(--size_h1);
+}
+h2{
+    font-size: var(--size_h2);
+}
+h3{
+    font-size: var(--size_h3);
+}
+
+/*-----------------------COMIENZO de INDEX ---------------------------------*/
+/*-----------------------COMIENZO de INDEX ---------------------------------*/
 /*---------------texto encima de foto en index------------*/
 .principal{
     width: 100%;
@@ -44,20 +59,20 @@ ol, ul {
     margin:3rem 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: var(--color_rosa);
+    background-color: var(--color_ligth);
 }
 .botones>button:hover{
-    color: var(--color_rosa);
-    background-color: var(--color_dark);
-    border:1px solid var(--color_rosa) ;
+    color: var(--color_ligth);
+    background-color: var(--color_mid);
+    border:1px solid var(--color_ligth) ;
     transform: scale(1.2);
     transition: .6s;
 }
 #parrafo{
-    color: var(--color_rosa);
+    color: var(--color_mid);
 }
 #titulo{
-    color: var(--color_blanco);
+    color: var(--color_ligth);
 }
 .botones{
     width: 100%;
@@ -72,10 +87,13 @@ ol, ul {
 
 /*-------------Sección trasteros en alquiler-----------*/
 .catalogo{
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
 }
-.contenedorTarjetas{    
+.catalogo>h1{
+    margin-bottom: 3rem;
+}
+.contenedorTarjetas{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,8 +106,8 @@ ol, ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid var(--color_gris);
-    box-shadow:10px 10px 50px 5px var(--color_gris);
+    border-bottom: 2px solid var(--color_brand);
+    box-shadow:10px 10px 50px 5px var(--color_brand);
     border-radius: 10px;
 }
 .tarjeta>h3,.tarjeta>p{
@@ -113,8 +131,8 @@ ol, ul {
 #tarj-1,#tarj-2,#tarj-3 {
     width: 100px;           
     height: 100px;          
-    border-bottom: 2px solid var(--color_gris);
-    box-shadow:10px 10px 50px 5px var(--color_gris);
+    border-bottom: 2px solid var(--color_brand);
+    box-shadow:10px 10px 50px 5px var(--color_brand);
     border-radius: 50%; 
     font-weight: bold;
     font-size: 2rem;
@@ -175,6 +193,44 @@ ol, ul {
     align-items: center;
 }
 
+/*-----------------------Fin de INDEX ---------------------------------*/
+/*-----------------------Fin de INDEX ---------------------------------*/
+
+
+
+/*-------------------------FOOTER-----------------------------*/
+/*----------------------------------------------------------*/
+footer{
+    background-color:var(--color_mid);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.footarjeta{    
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+}
+.footarjeta2{    
+    display: none;
+}
+.footarjeta>a{
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.footarjeta>a:hover{
+    text-decoration: none;
+    color: black;
+    transform: scale(1.2);
+}
+
+/*-----------------------FIN FOOTER-----------------------------*/
+/*---------------------------------------------------------------*/
 
 /* -------para telefonos moviles y tablet de pie---------*/
 @media (min-width: 300px) and (max-width: 550px) {
@@ -191,7 +247,13 @@ ol, ul {
     }
     
 }
-/*--------------------------------------------------------*/
+
+
+
+
+
+
+
 
 
 /*para tablet de pie y acostada*/
@@ -237,7 +299,7 @@ ol, ul {
         .ulMenu {
             width: 100%;
             left: 0;       
-            background-color:var(--color_gris);
+            background-color:var(--color_dark);
             position: absolute;
             top: var(--altura_header);
             height: 0;
@@ -289,8 +351,8 @@ ol, ul {
         position: fixed;
         height: var(--altura_header);
         background-color: var(--color_blanco);
-        border-bottom: 2px solid var(--color_gris);
-        box-shadow:10px 10px 50px 20px var(--color_gris);
+        border-bottom: 2px solid var(--color_dark);
+        box-shadow:10px 10px 50px 20px var(--color_dark);
 
     }
     .lblHamburguesa,.nombre{
@@ -315,7 +377,7 @@ ol, ul {
         font-weight: 500;
     }
     .aMenu:hover{
-        color: var(--color_gris);
+        color: var(--color_dark);
         text-decoration: none;
         transition: all .3s ;  
     }
@@ -368,6 +430,33 @@ ol, ul {
     .divContacto{
         flex-direction: row;
     }
+/*-------------------FIN INDEX--------------------------*/
+/*----------------------------------------------------------*/
+
+
+
+/*-------------------------FOOTER-----------------------------*/
+/*----------------------------------------------------------*/
+.footer{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footarjeta{ 
+    justify-content: left;
+}
+.footarjeta2{    
+    display: flex;
+    flex-direction: column;
+}
+.footarjeta>a{
+    width: 100%;
+}
+
+
+/*-----------------------FIN FOOTER-----------------------------*/
+/*---------------------------------------------------------------*/
     
 
 }
