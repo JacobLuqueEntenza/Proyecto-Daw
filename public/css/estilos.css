@@ -190,25 +190,7 @@ h3{
 /*-----------------------PAGINA TRASTEROS------------------------------*/
 .galeriaTrasteros{
     display: flex;
-    height: 40rem;
-    gap:1rem;
-    margin:0 2rem;
-}
-.galeriaTrasteros>div{
-    flex: 1;
-    border-radius: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
-}
-.galeriaTrasteros>div:hover{
-    flex: 5;
-    border-radius: 1rem;
-}
-.galeriaTrasteros{
-    display: flex;
-    height: 40rem;
+    height: 80vh;
     gap:1rem;
     margin:0 2rem;
 }
@@ -242,16 +224,52 @@ h3{
     justify-content: center;
     align-items: center;
 }
+.plano{
+    text-align: center;
+    margin: 2rem;
+}
+.btnTrasteros{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnTrasteros>a{
+    width: 40%;
+    height: 100%;     
+    color: black;
+}
+.btnTrasteros>a:hover{
+    text-decoration: none;
+    color: var(--color_blanco);
+    
+}   
+.btnTrasteroa{
+    text-align: center;
+    background-color: var(--color_ligth);  
+    border-radius: 10px; 
+    padding: .5rem;
+}
+.btnTrasteroa:hover{
+    text-align: center;
+    background-color: var(--color_ligth);  
+    transform: scale(1.1);
+    transition: .6s;
+    background-color: var(--color_dark);
+}
+
+.seccionPlano{
+    display: none;
+}
 
 
+/*-----------------------FIN TRASTEROS------------------------------*/
+/*-----------------------FIN TRASTEROS------------------------------*/
 
 
-/*-----------------------PAGINA TRASTEROS------------------------------*/
-/*-----------------------PAGINA TRASTEROS------------------------------*/
-
-
-/*-------------------------FOOTER-----------------------------*/
-/*----------------------------------------------------------*/
+/*-------------------------FOOTER------------------------------*/
+/*-------------------------------------------------------------*/
 footer{
     background-color:var(--color_mid);
     display: flex;
@@ -485,6 +503,23 @@ footer{
 /*----------------------------------------------------------*/
 
 
+/*---------------------- PAGINA TRASTEROS--------------------------*/
+/*----------------------------------------------------------*/
+.seccionPlano{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionPlano video{
+    margin: 2rem 0;
+    padding: 3rem;
+    width: 50%;
+    height: 50vh;
+}
+
+/*---------------------- FIN TRASTEROS--------------------------*/
+/*----------------------------------------------------------*/
+
 
 /*-------------------------FOOTER-----------------------------*/
 /*----------------------------------------------------------*/
@@ -504,8 +539,6 @@ footer{
 .footarjeta>a{
     width: 100%;
 }
-
-
 /*-----------------------FIN FOOTER-----------------------------*/
 /*---------------------------------------------------------------*/
     
