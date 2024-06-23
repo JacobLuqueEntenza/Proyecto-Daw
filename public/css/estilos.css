@@ -53,7 +53,6 @@ h3{
     flex-direction: column;
     align-items: center;  
 }
-
 .botones>button{   
     height: 5rem;
     margin:3rem 1rem;
@@ -81,10 +80,7 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
-
 /*-------------Sección trasteros en alquiler-----------*/
 .catalogo{
     margin-top: 1rem;
@@ -113,7 +109,6 @@ h3{
 .tarjeta>h3,.tarjeta>p{
     margin: 1rem;
 }
-
 /*-------------Sección proceso alquiler-----------*/
 .alquiler{
     text-align: center;
@@ -142,7 +137,6 @@ h3{
     width: 5rem;
     height: 5rem;
 }
-
 /*---------cobros recibos-------------------------*/
 .cobros{
     text-align: center;
@@ -157,8 +151,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
-
 /*-------------------contactos y soporte-------------------*/
 .contactos { 
     margin-top: 3rem;
@@ -181,9 +173,6 @@ h3{
     width: 50px;
     height: 50px;
 }
-
-
-
 /*---------------donde estamos-------------------------------*/
 .mapa{
     margin-top: 3rem;
@@ -192,10 +181,73 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
 /*-----------------------Fin de INDEX ---------------------------------*/
 /*-----------------------Fin de INDEX ---------------------------------*/
 
+
+
+/*-----------------------PAGINA TRASTEROS------------------------------*/
+/*-----------------------PAGINA TRASTEROS------------------------------*/
+.galeriaTrasteros{
+    display: flex;
+    height: 40rem;
+    gap:1rem;
+    margin:0 2rem;
+}
+.galeriaTrasteros>div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+}
+.galeriaTrasteros>div:hover{
+    flex: 5;
+    border-radius: 1rem;
+}
+.galeriaTrasteros{
+    display: flex;
+    height: 40rem;
+    gap:1rem;
+    margin:0 2rem;
+}
+.galeriaTrasteros>div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+}
+.galeriaTrasteros>div:hover{
+    flex: 5;
+    border-radius: 1rem;
+}
+.contenedorTrasteros{
+    margin-top: 3rem;
+}
+.contenedorTrasteros>h2,.contenedorTrasteros>h3{
+    text-align: center;
+}
+.contenedorTrasteros>h2{
+    font-size: var(--size_h2);
+}
+.contenedorTrasteros>h3{
+    font-size: var(--size_h3);
+}
+.divTrasteros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*-----------------------PAGINA TRASTEROS------------------------------*/
+/*-----------------------PAGINA TRASTEROS------------------------------*/
 
 
 /*-------------------------FOOTER-----------------------------*/
@@ -228,7 +280,6 @@ footer{
     color: black;
     transform: scale(1.2);
 }
-
 /*-----------------------FIN FOOTER-----------------------------*/
 /*---------------------------------------------------------------*/
 
