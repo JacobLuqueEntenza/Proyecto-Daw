@@ -5,14 +5,14 @@
 
    
    <?php  
-   /*require_once ('../../controlador/trasterosControlador.php');
-   //$trasteros= new TrasterosControlador();
+   require_once ('../../controlador/trasterosControlador.php');
+   $trasteros= new TrasterosControlador();
    
    if (!isset($_SESSION['usuario']) || $_SESSION['rol'] != 1) {
        $fila=$trasteros->listaTrasteros();         
    }else{
        $fila=$trasteros->listaTrasterosAdmin();
-   };*/
+   };
    ?>
    
 
@@ -70,8 +70,7 @@
         <area target="" alt="16" title="Trastero 16" href="#video" title="Trastero 16"  onclick="mostrarVideo('/tutrastero/tutrastero/public/img/videos/vt-16.mp4')" coords="241,297,365,427" shape="rect">
         <area target="" alt="18" title="Trastero 18" href="#video" title="Trastero 18"  onclick="mostrarVideo('/tutrastero/tutrastero/public/img/videos/vt-18.mp4')" coords="241,429,367,526" shape="rect">
     </map>
-
-    <video id="video" controls style="display:none;"muted>
+    <video id="video" controls style="display:none;" muted>
     <source src="" type="video/mp4">
     </video>
 </section>
@@ -79,22 +78,22 @@
 
 
 
-<?php /*if (!isset( $_SESSION['rol']) || $_SESSION['rol'] != 1){ */?>
+<?php if (!isset( $_SESSION['rol']) || $_SESSION['rol'] != 1){ ?>
 <section class="btnTrasteros"> 
        <a href="#tablaTrasteros" onclick="mostrarTrasterosDisponibles()">     
            <div class="btnTrasteroa">
-               <h3>Trasteros Disponibles</h3>               
+               <h5>Trasteros Disponibles</h5>               
            </div>
        </a> 
        <a href="#tablaTrasteros" onclick="refrescarPagina()"> 
            <div class="btnTrasteroa">
-               <h3>Lista Trasteros</h3>               
+               <h5>Lista Trasteros completa</h5>               
            </div>
        </a>
 </section>
 
    
-<?php /* } */?>
+<?php } ?>
        
        <div class="container mt-3 ">
            
@@ -120,22 +119,20 @@
                                    </tr>
                                </thead>
                                <tbody>
-                               <?php foreach($fila as $trastero){ ?>
-                                   <tr>
-                                       <td><?php echo $trastero['id_trastero']?></td>
-                                       <td><?php echo $trastero['tamaño']?></td>
-                                       <td><?php echo $trastero['precio']  ?></td>
-                                       <?php  if (isset( $_SESSION['rol']) && $_SESSION['rol'] == 1) {
-                                           echo "<td>".$trastero['nombre'].' '.$trastero['apellido_1'].' '.$trastero['apellido_2']."</td>";
-                                       }else{
-                                           echo "<td>".$trastero['descripcion']."</td>";
-                                           echo "<td>".($trastero['disponible']==1 ? 'Si' : 'No')."</td>";
-                                       }; ?>                      
-                                       
-                                                                            
-                                   </tr>
-                                   <?php } ?>
-                               </tbody>
+                                <?php foreach($fila as $trastero){ ?>
+                                    <tr>
+                                        <td><?php echo $trastero['id_trastero']?></td>
+                                        <td><?php echo $trastero['tamaño']?></td>
+                                        <td><?php echo $trastero['precio']  ?></td>
+                                        <?php  if (isset( $_SESSION['rol']) && $_SESSION['rol'] == 1) {
+                                            echo "<td>".$trastero['nombre'].' '.$trastero['apellido_1'].' '.$trastero['apellido_2']."</td>";
+                                        }else{
+                                            echo "<td>".$trastero['descripcion']."</td>";
+                                            echo "<td>".($trastero['disponible']==1 ? 'Si' : 'No')."</td>";
+                                        }; ?>                                
+                                    </tr>
+                                <?php } ?>
+                                </tbody>
                            </table>
                        </div>
                    </div>

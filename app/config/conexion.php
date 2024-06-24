@@ -31,7 +31,6 @@ class Conexion
     }
 }
 
-
 //$pdo = new Conexion();
 //$conexion = $pdo->conectar();
 //print_r($conexion);
