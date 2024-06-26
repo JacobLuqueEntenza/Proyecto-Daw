@@ -45,9 +45,9 @@ class UsuariosControlador{
                 $_SESSION['id_user']=$existeUsuario['id_user'];
                 $_SESSION['rol']=$existeUsuario['rol_id'];
                 $_SESSION['trastero']=$existeUsuario['trastero_id'];
-                header('Location: /tutrastero/tutrastero/public/index.php');
+                header('Location: /proyecto-daw/public/index.php');
             }else{
-                header('Location: /tutrastero/tutrastero/app/vista/login/login.php'); 
+                header('Location: /proyecto-daw/app/vista/login/login.php'); 
             }    
             exit();
         }catch(Exception $e){

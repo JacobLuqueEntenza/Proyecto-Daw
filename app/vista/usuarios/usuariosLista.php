@@ -36,7 +36,7 @@
 <?php 
     
     if (!isset($_SESSION['usuario']) || $_SESSION['rol'] != 1) {
-        header('Location: /tutrastero/tutrastero/public/index.php');
+        header('Location: /proyecto-daw/public/index.php');
         exit;
     };
 ?>
@@ -92,14 +92,14 @@
                                         <td><?php echo $usuario['email'] ?></td>
                                         <td><?php echo $usuario['rol'] ?></td>
                                         <td>
-                                            <a href='usuarioEditar.php?id=<?php echo $usuario['id_user'];?>'><img class="ediborra" src="/tutrastero/tutrastero/public/img/editar.ico" alt="Editar"></a>
+                                            <a href='usuarioEditar.php?id=<?php echo $usuario['id_user'];?>'><img class="ediborra" src="/proyecto-daw/public/img/editar.ico" alt="Editar"></a>
                                         </td>
                                         <td>
-                                            <a href='usuarioEditar.php?id=<?php echo $usuario['id_user'];?>'><img class="ediborra" src="/tutrastero/tutrastero/public/img/borrar.ico" alt="Eliminar"></a>
+                                            <a href='usuarioEditar.php?id=<?php echo $usuario['id_user'];?>'><img class="ediborra" src="/proyecto-daw/public/img/borrar.ico" alt="Eliminar"></a>
                                         </td>
                                         <?php echo ($usuario['rol_id'] == 2) ?
                                         '<td>
-                                            <a href="../recibos/reciboNuevo.php?id=' . $usuario['id_user'] . '"><img class="ediborra" src="/tutrastero/tutrastero/public/img/recibo.ico" alt="recibo"></a>
+                                            <a href="../recibos/reciboNuevo.php?id=' . $usuario['id_user'] . '"><img class="ediborra" src="/proyecto-daw/public/img/recibo.ico" alt="recibo"></a>
                                         </td>' : ''; ?>
 
                                         

@@ -25,11 +25,36 @@
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/public/index.php">Inicio</a> </li>
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/trasteros/trasteros.php">Trasteros</a> </li>
                 <li class="liMenu"><a class="aMenu" href="#">Contacto</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Averias</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Recibos</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Login</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Registrate</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Cerrar Sesión</a> </li>
+                <?php  
+                session_start();
+                //si el rol es distinto de tres nos aparecera pagos y recibos
+                if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] != 3){ 
+                    if($_SESSION['rol'] ==1){?>
+                        <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Averias</a> </li>
+                    <?php 
+                    }else{?>
+                        <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Averias</a> </li>
+                    <?php } ?>        
+                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Recibos</a> </li>
+                <?php } 
+                if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] == 1){ ?>
+                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#" onclick="borrarCliente();">Usuarios</a> </li>
+                <?php } ?>    
+
+    <?php 
+        
+        if(!isset($_SESSION['usuario'])){?>
+
+            <li class="liMenu"><img id="imglogin" src="/proyecto-daw/public/img/Login.ico" alt="login"><a class="aMenu" href="/proyecto-daw/app/vista/#">Login</a></li>  
+            <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Registrate</a></li> 
+
+    <?php
+         }else{ ?>
+             <li class="liMenu"><a class="aMenu" href="">Hola, <?php echo $_SESSION['usuario']; ?>  </a></li>
+             <li class="liMenu"><a class="aMenu" href="//proyecto-daw/app/vista/#">CerrarSesión</a></li>        
+    <?php
+    };
+    ?>       
             </ul> 
         </nav>
     </header>

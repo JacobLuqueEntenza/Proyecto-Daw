@@ -39,6 +39,12 @@ h2{
 h3{
     font-size: var(--size_h3);
 }
+.liMenu>img{
+    width: 2em;
+    height: 2em;
+    margin-bottom: .6em;
+}
+
 
 /*-----------------------COMIENZO de INDEX ---------------------------------*/
 /*-----------------------COMIENZO de INDEX ---------------------------------*/
@@ -434,7 +440,7 @@ footer{
         height: var(--altura_header);
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .aMenu{
