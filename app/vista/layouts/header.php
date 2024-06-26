@@ -38,20 +38,20 @@
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Recibos</a> </li>
                 <?php } 
                 if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] == 1){ ?>
-                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#" onclick="borrarCliente();">Usuarios</a> </li>
+                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/usuariosLista.php" onclick="borrarCliente();">Usuarios</a> </li>
                 <?php } ?>    
 
     <?php 
         
         if(!isset($_SESSION['usuario'])){?>
 
-            <li class="liMenu"><img id="imglogin" src="/proyecto-daw/public/img/Login.ico" alt="login"><a class="aMenu" href="/proyecto-daw/app/vista/#">Login</a></li>  
+            <li class="liMenu"><img id="imglogin" src="/proyecto-daw/public/img/Login.ico" alt="login"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/login.php">Login</a></li>  
             <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Registrate</a></li> 
 
     <?php
          }else{ ?>
              <li class="liMenu"><a class="aMenu" href="">Hola, <?php echo $_SESSION['usuario']; ?>  </a></li>
-             <li class="liMenu"><a class="aMenu" href="//proyecto-daw/app/vista/#">CerrarSesión</a></li>        
+             <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/controlador/cerrarSesionControlador.php">CerrarSesión</a></li>        
     <?php
     };
     ?>       

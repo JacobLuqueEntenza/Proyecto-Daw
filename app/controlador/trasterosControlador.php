@@ -43,7 +43,7 @@ public function listaTrasterosAdmin(){
     $trasteros = $trastero->getListaTrasterosAdmin();
 
     // Carga la vista del listado de trasteros
-    require_once "trasterosLista.php";
+    require_once "trasteros.php";
     
     // Devuelve el listado de trasteros
     return $trasteros;
