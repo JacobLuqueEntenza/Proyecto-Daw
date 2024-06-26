@@ -191,7 +191,7 @@ h3{
 .galeriaTrasteros{
     display: flex;
     height: 80vh;
-    gap:1rem;
+    gap:0.5em;
     margin:0 2rem;
 }
 .galeriaTrasteros>div{
@@ -508,12 +508,16 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .seccionPlano video{
     margin: 2rem 0;
     padding: 3rem;
     width: 50%;
     height: 50vh;
+}
+.divTrasteros{
+    flex-direction: row;
 }
 /*---------------------- FIN TRASTEROS--------------------------*/
 /*----------------------------------------------------------*/
