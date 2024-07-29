@@ -85,7 +85,7 @@
 <?php } ?>
        
        <div class="container mt-3 ">
-           <div class="btnTrasteros mb-3"> 
+           <div class="btnTrasteros mb-4 ml-0 mr-0"> 
                 <a href="#tablaTrasteros" onclick="mostrarTrasterosDisponibles()">     
                     <div class="btnTrasteroa">
                         <h5>Trasteros Disponibles</h5>               

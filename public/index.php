@@ -3,6 +3,7 @@
     include '../app/vista/layouts/header.php';    
 ?>
 
+
 <section class="principal">        
         <h2 id="titulo">tutrasteroenhuelva.es</h2>
         <h3 id="parrafo">Simplifica tu almacenamiento y mantén tus pertenencias seguras con nuestros trasteros en alquiler.</h3>

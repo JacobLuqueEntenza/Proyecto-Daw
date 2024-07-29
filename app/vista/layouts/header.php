@@ -24,7 +24,7 @@
             <ul class="ulMenu">
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/public/index.php">Inicio</a> </li>
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/trasteros/trasteros.php">Trasteros</a> </li>
-                <li class="liMenu"><a class="aMenu" href="#">Contacto</a> </li>
+                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/layouts/contacto.php">Contacto</a> </li>
                 <?php  
                 session_start();
                 //si el rol es distinto de tres nos aparecera pagos y recibos
@@ -46,7 +46,7 @@
         if(!isset($_SESSION['usuario'])){?>
 
             <li class="liMenu"><img id="imglogin" src="/proyecto-daw/public/img/Login.ico" alt="login"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/login.php">Login</a></li>  
-            <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Registrate</a></li> 
+            <li class="liMenu"><a class="aMenu" href="#modal1">Registrate</a></li> 
 
     <?php
          }else{ ?>

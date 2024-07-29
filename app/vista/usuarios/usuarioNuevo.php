@@ -37,7 +37,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="form-container">
+                <div class="form-container mt-5">
                     <form action="" method="POST" class="mt-5" name="nuevo">
                         <legend class="text-center mb-5">Nuevo Usuario</legend>
                         <div class="form-group">
