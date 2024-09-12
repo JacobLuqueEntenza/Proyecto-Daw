@@ -10,8 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">      
 </head>
 
-<body>
-
+<body class="hidden">
     <header class="header" id="header">
         <nav class="navbar">
             <h3 class="nombre">tutrasteroenhuelva.es</h3>
@@ -28,14 +27,10 @@
                 <?php  
                 session_start();
                 //si el rol es distinto de tres nos aparecera pagos y recibos
-                if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] != 3){ 
-                    if($_SESSION['rol'] ==1){?>
-                        <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Averias</a> </li>
-                    <?php 
-                    }else{?>
-                        <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Averias</a> </li>
-                    <?php } ?>        
-                <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/#">Recibos</a> </li>
+                if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] != 3){ ?>
+                    <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/averias/averiasLista.php">Averias</a> </li>                    
+                           
+                    <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/">Recibos</a> </li>
                 <?php } 
                 if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] == 1){ ?>
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/usuariosLista.php" onclick="borrarCliente();">Usuarios</a> </li>
@@ -46,7 +41,7 @@
         if(!isset($_SESSION['usuario'])){?>
 
             <li class="liMenu"><img id="imglogin" src="/proyecto-daw/public/img/Login.ico" alt="login"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/login.php">Login</a></li>  
-            <li class="liMenu"><a class="aMenu" href="#modal1">Registrate</a></li> 
+            <!--<li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/usuarioNuevo.php">Registrate</a></li> -->
 
     <?php
          }else{ ?>

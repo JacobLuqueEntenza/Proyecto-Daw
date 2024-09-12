@@ -13,8 +13,7 @@
    }else{
        $fila=$trasteros->listaTrasterosAdmin();
    };
-   ?>
-   
+   ?>   
 
        
 <div class="galeriaTrasteros">
@@ -29,13 +28,16 @@
     <h2>Consejos Inteligentes</h2>
     <h3>Manten tu Trastero Siempre en Orden</h3>
     <div class="divTrasteros">
-       <div class="tarjeta">            
+       <div class="tarjeta">  
+            <h3>Divide y vencerás</h3>          
            <p>Imagina un espacio donde cada objeto tiene su lugar designado, donde encontrar lo que necesitas es tan fácil como abrir una puerta. Esa es la magia de tener un trastero ordenado.</p>
        </div>
        <div class="tarjeta">
+           <h3>Organiza</h3> 
            <p>Con un trastero organizado, puedes maximizar el espacio, proteger tus pertenencias y acceder a ellas de manera rápida y eficiente.</p>
        </div>
        <div class="tarjeta">
+           <h3>Crea</h3> 
            <p>Es el santuario perfecto para tus cosas, donde cada elemento tiene su propósito y contribuye a crear un ambiente armonioso en tu vida diaria.</p>
        </div>
     </div>   
@@ -43,7 +45,8 @@
 
 <section class="plano" id="situacionTrasteros">
     <h2>Plano de situación Trasteros</h2>
-    <p>Selecciona el trastero que más te interese y podrás acceder a un video detallado del mismo. Descubre todasus características y decide con mayor seguridad.</p>                    
+    <p>Selecciona el trastero que más te interese y podrás acceder a un video detallado del mismo. Descubre todas sus características y decide con mayor seguridad.</p>    
+    <p>Pulsa sobre la imagen el trastero a seleccionar o el número en la lista que estás interesado y acccede al video.</p>                
 </section>
 <section class="seccionPlano"> 
     <img src="/proyecto-daw/public/img/plano.jpg" alt="plano situacion trasteros" usemap="#planoTrasteros" id="imgPlano">
@@ -121,7 +124,7 @@
                                <tbody>
                                 <?php foreach($fila as $trastero){ ?>
                                     <tr>
-                                        <td><a href="<?php echo $trastero['url']?>"><?php echo $trastero['id_trastero']?></a></td>
+                                        <td><a href="<?php echo $trastero['url']?>" target="_blank"><?php echo $trastero['id_trastero']?></a></td>
                                         <td><?php echo $trastero['tamaño']?></td>
                                         <td><?php echo $trastero['precio']  ?></td>
                                         <?php  if (isset( $_SESSION['rol']) && $_SESSION['rol'] == 1) {
@@ -140,13 +143,7 @@
            </div>
        </div>
                               
-       
-     
-       
-
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-       
+      
        
        
        <?php require ('../layouts/footer.php');//incluimos el footer comun?>  

@@ -1,9 +1,13 @@
 <?php 
     // Incluir el header 
-    include '../app/vista/layouts/header.php';    
+    include '../app/vista/layouts/header.php';  
 ?>
-
-
+<div id="loaderPagina" class="section_loader">
+    <div class="loader">
+      <div class="loader_1"></div>
+      <div class="loader_2"></div>
+    </div>
+  </div>
 <section class="principal">        
         <h2 id="titulo">tutrasteroenhuelva.es</h2>
         <h3 id="parrafo">Simplifica tu almacenamiento y mantén tus pertenencias seguras con nuestros trasteros en alquiler.</h3>
