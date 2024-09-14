@@ -25,12 +25,11 @@
    ?>   
 
 
-<div class="containertext-center mb-5 ">
-    <h1 class="h1 text-center mb-5">Solo visible para administradores</h1> 
-    <p class="h4 m-4">Desde aquí el administrador puede gestionar todo lo referente a las averias, es decir, situacion en que estado estan. ESTUDIAR ADJUNTAR FOTO.</p>
+<div class="containertext-center mb-1 ">  
+    <img id="averiaFoto" src="/proyecto-daw/public/img/pasillo.jpg" alt="">  
 </div>
-        
-<div class="container mt-5 ">    
+    
+<div class="container">    
     <div class="col-md-12">
         <div class="card">
             <button type="button" class="btn btn-success m-3 btn-lg" onclick="window.location.href='averiaNuevo.php'">Añadir Averia</button>
@@ -73,45 +72,44 @@
 </div>
         
                                
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center mt-5">
-            <?php if ($pagina > 1): ?>
-            <li class="page-item">
-                <a class="page-link" href="averiasLista.php?pagina=<?=$previo; ?>" aria-label="Previous">
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center mt-5">
+    <?php if ($pagina > 1): ?>
+        <li class="page-item">
+            <a class="page-link" href="averiasLista.php?pagina=<?=$previo; ?>" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
+            </a>
+        </li>
             <?php else: ?>
-            <li class="page-item disabled">
-                <span class="page-link" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </span>
-            </li>
+        <li class="page-item disabled">
+            <span class="page-link" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </span>
+        </li>
             <?php endif; ?>
 
-                <?php for($i=1;$i<=$totalPaginas;$i++): ?>
+            <?php for($i=1;$i<=$totalPaginas;$i++): ?>
 
-                <li class="page-item <?php echo $pagina==$i ? 'active' :'' ?>"><a class="page-link" href="averiasLista.php?pagina=<?php echo $i;?>"><?php echo $i; ?></a>
+        <li class="page-item <?php echo $pagina==$i ? 'active' :'' ?>"><a class="page-link" href="averiasLista.php?pagina=<?php echo $i;?>"><?php echo $i; ?></a>
                 </li>
 
-                <?php endfor ?>
+            <?php endfor ?>
                 
-                <?php if ($pagina < $totalPaginas): ?>
-                <li class="page-item ">
-                <a class="page-link" href="averiasLista.php?pagina=<?=$siguiente; ?>" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
+            <?php if ($pagina < $totalPaginas): ?>
+        <li class="page-item ">
+            <a class="page-link" href="averiasLista.php?pagina=<?=$siguiente; ?>" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+            <?php else: ?>
+        <li class="page-item disabled">
+            <span class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            </span>
                 </li>
-                <?php else: ?>
-                <li class="page-item disabled">
-                    <span class="page-link" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </span>
-                </li>
-                <?php endif; ?>
-            </ul>
-        </nav>
-      
+            <?php endif; ?>
+    </ul>
+</nav>
         
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
