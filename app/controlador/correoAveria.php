@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '/xampp/htdocs/tutrastero/tutrastero/libreria/PHPMailer/src/Exception.php';
-require '/xampp/htdocs/tutrastero/tutrastero/libreria/PHPMailer/src/PHPMailer.php';
-require '/xampp/htdocs/tutrastero/tutrastero/libreria/PHPMailer/src/SMTP.php';
+require '/wamp/www/Proyecto-Daw/librerias/PHPMailer/src/Exception.php';
+require '/wamp/www/Proyecto-Daw/librerias/PHPMailer/src/PHPMailer.php';
+require '/wamp/www/Proyecto-Daw/librerias/PHPMailer/src/SMTP.php';
 require_once ('averiasControlador.php');
 require_once ('../config/conexion.php');
 
