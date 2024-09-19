@@ -114,7 +114,7 @@ function mostrarVideo(url) {
 /**
  * cuando carge la pagina nos aparezca el loader
  * 
- */
+ 
 window.addEventListener("DOMContentLoaded", () => {
     showLoader();
   })
@@ -132,4 +132,4 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   const hideLoader = () => {
     loader.style.display='flex';
-  }
+  }*/

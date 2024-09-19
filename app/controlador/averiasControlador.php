@@ -45,6 +45,7 @@ public function listaAverias($pagina) {
         require_once "averiasLista.php";
         
         return $averias;
+        
     } catch (Exception $e) {
         throw new Exception('Error al obtener la lista de usuarios: ' . $e->getMessage());
     }

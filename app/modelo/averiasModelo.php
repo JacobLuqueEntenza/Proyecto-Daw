@@ -62,10 +62,7 @@ public function filasLista() {
  */
 public function getListaAverias($paginaInicio, $filasxPagina) {
     // Construir la consulta SQL
-    $sql="  SELECT  *
-            FROM averias
-            ORDER BY fecha DESC
-            LIMIT $paginaInicio,$filasxPagina";
+    $sql="SELECT * FROM averias WHERE fecha IS NOT NULL ORDER BY fecha DESC, id_averia ASC LIMIT $paginaInicio,$filasxPagina ";
 
     // Preparar la consulta SQL
     $conectar=$this->db->conectar();
