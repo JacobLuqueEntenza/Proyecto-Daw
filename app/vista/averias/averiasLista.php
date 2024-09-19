@@ -26,7 +26,7 @@
 
 
 <div class="containertext-center mb-1 ">  
-    <img id="averiaFoto" src="/proyecto-daw/public/img/pasillo.jpg" alt="">  
+    <img id="averiaFoto" src="/proyecto-daw/public/img/averias.jpg" alt="">  
 </div>
     
 <div class="container">    
