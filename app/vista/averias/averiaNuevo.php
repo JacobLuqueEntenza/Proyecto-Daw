@@ -8,8 +8,7 @@ require ('../layouts/header.php');
         <div class="col-md-6 mt-5" >
             <div class="form-container ">
                 <form action="../../controlador/correoAveria.php" method="POST" class="mt-5" name="nuevo">
-                    <legend class="text-center mb-5 mt-5 h1.
-                    ">Nueva Averia</legend>
+                    <legend class="text-center mb-5 mt-5 h1">Nueva Averia</legend>
                     <div class="form-group">
                         <label class="label-grande" for="fecha">Fecha:</label>
                         <input type="date" class="form-control" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" readonly>
