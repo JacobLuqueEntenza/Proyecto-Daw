@@ -30,7 +30,7 @@
                 if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] != 3){ ?>
                     <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/averias/averiasLista.php">Averias</a> </li>                    
                            
-                    <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/">Recibos</a> </li>
+                    <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/recibos/recibosLista.php">Recibos</a> </li>
                 <?php } 
                 if (isset($_SESSION['usuario']) && isset($_SESSION['rol']) && $_SESSION['rol'] == 1){ ?>
                 <li class="liMenu"><a class="aMenu" href="/proyecto-daw/app/vista/usuarios/usuariosLista.php" onclick="borrarCliente();">Usuarios</a> </li>
