@@ -40,13 +40,13 @@
 
         
     ?>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="form-container">
+            <div class="col-md-6 mt-5">
+                <div class="form-container mt-5">
                     <form action="" method="POST" class="mt-5" name="nuevoRecibo">
-                        <legend class="text-center mb-5">Nuevo Recibo viene de la lista de usuarios</legend>
-                        <div class="form-group">                            
+                        <legend class="text-center mb-5 h2">Nuevo Recibo viene de la lista de usuarios</legend>
+                        <div class="form-group">
                             <input type="text" class="form-control" id="id" name="id" value="<?php echo $id ?>">
                         </div>
                         <div class="form-group"> 

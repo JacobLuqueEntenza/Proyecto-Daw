@@ -106,7 +106,7 @@
 $html=ob_get_clean();
 //echo $html;
 
-require_once ('../../../libreria/dompdf/dompdf/autoload.inc.php');
+require_once ('../../../librerias/dompdf/dompdf/autoload.inc.php');
 
 use Dompdf\Dompdf;
 $dompdf=new Dompdf();

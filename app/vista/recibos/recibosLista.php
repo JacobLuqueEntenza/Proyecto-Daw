@@ -122,7 +122,7 @@
                                         ' : ''; 
                                         ?>
                             <td>
-                                            <a href="generarPDF.php?id=<?php echo $recibo['id_recibo']?> "><img class="pdf" src="/tutrastero/tutrastero/public/img/pdf.ico" alt="pdf"></a>
+                                            <a href="reciboPDF.php?id=<?php echo $recibo['id_recibo']?> "><img class="pdf" src="/tutrastero/tutrastero/public/img/pdf.ico" alt="pdf"></a>
                             </td>
 
                                         
